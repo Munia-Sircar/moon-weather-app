@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(211, 238, 247);
+}
+
+h1 {
+  color: blue;
+}
+
+.container {
+  background-color: white;
+  max-width: 60%;
+  padding: 20px 30px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
