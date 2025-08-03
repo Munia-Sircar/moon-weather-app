@@ -1,16 +1,29 @@
 body {
-  background-color: rgb(211, 238, 247);
-}
+  background-color: rgb(220, 241, 248);
 
 h1 {
   color: blue;
 }
 
 .container {
-  background-color: white;
-  max-width: 60%;
-  padding: 20px 30px;
-  display: block;
-  margin: 0 auto;
+  background: white;
+  max-width: 600px;
+  margin: 45px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
+  padding: 30px;
+}
+
+#search-input {
+  padding: 10px 50px 10px 10px;
+  border: none;
+  background-color: rgb(220, 241, 248);
+  border-radius: 5px;
+}
+
+#search-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(220, 241, 248);
+  border-radius: 5px;
 }
