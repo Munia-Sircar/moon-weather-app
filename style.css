@@ -45,17 +45,19 @@ footer {
 
 #search-input {
   padding: 10px 20px 10px 10px;
-  border: none;
+
   background-color: rgb(233, 245, 248);
-  border-radius: 5px;
-  font-size: 15px;
 }
 
 #search-btn {
   padding: 10px 20px;
-  border: none;
   background-color: rgb(130, 185, 248);
-  border-radius: 5px;
   color: white;
+}
+
+#search-input,
+#search-btn {
+  border: none;
   font-size: 15px;
+  border-radius: 5px;
 }
