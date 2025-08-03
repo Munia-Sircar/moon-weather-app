@@ -1,22 +1,23 @@
 body {
-  background-color: rgb(220, 241, 248);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(233, 245, 248);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: darkslategray;
 }
 header {
-  border-bottom: 1px solid rgb(241, 239, 239);
+  border-bottom: 1px solid rgb(233, 245, 248);
 }
 
 main {
+  margin: 10px 0;
   padding: 10px 0;
 }
 
 h1 {
-  margin: 10px 0;
+  margin: 0;
 }
 
 footer {
-  border-top: 1px solid rgb(240, 235, 235);
+  border-top: 1px solid rgb(233, 245, 248);
   font-size: 15px;
   color: rgb(151, 143, 143);
   padding-top: 20px;
@@ -26,7 +27,7 @@ footer {
   background: white;
   max-width: 600px;
   margin: 45px auto;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: 2px 2px 10px grey;
   border-radius: 10px;
   padding: 30px;
 }
@@ -37,13 +38,15 @@ footer {
   justify-content: right;
   position: relative;
   bottom: 33px;
-  color: rgb(216, 65, 216);
+  color: rgb(35, 129, 236);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #search-input {
   padding: 10px 20px 10px 10px;
   border: none;
-  background-color: rgb(220, 241, 248);
+  background-color: rgb(233, 245, 248);
   border-radius: 5px;
   font-size: 15px;
 }
