@@ -43,6 +43,11 @@ footer {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.weather-info {
+  font-weight: bold;
+  color: crimson;
+}
+
 #search-input {
   padding: 10px 20px 10px 10px;
   background-color: rgb(233, 245, 248);
