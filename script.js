@@ -33,26 +33,24 @@ function searchCity(event) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${apiCity.value}&key=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayCity);
+  let now = new Date();
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let day = days[now.getDay()];
+
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let currentTime = document.querySelector("#current-time");
+  currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 }
 let enterCity = document.querySelector("#search-function");
 enterCity.addEventListener("submit", searchCity);
-
-let now = new Date();
-
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-let day = days[now.getDay()];
-
-let hours = now.getHours();
-let minutes = now.getMinutes();
-
-let currentTime = document.querySelector("#current-time");
-currentTime.innerHTML = `${day} ${hours}:${minutes}`;
