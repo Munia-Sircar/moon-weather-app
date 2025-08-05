@@ -16,6 +16,16 @@ function searchCity(event) {
     let wind = document.querySelector("#windspeed");
     let windNow = Math.round(response.data.wind.speed);
     wind.innerHTML = windNow;
+
+    let description = document.querySelector("#current-description");
+    let descriptionNow = response.data.condition.description;
+    description.innerHTML = descriptionNow;
+
+    //let icon = document.querySelector("#current-icon");
+    //let iconNow = response.data.condition.icon;
+    // icon.innerHTML = iconNow;
+
+    console.log(response);
   }
 
   let apiCity = document.querySelector("#search-input");
