@@ -22,7 +22,7 @@ function searchCity(event) {
     description.innerHTML = descriptionNow;
 
     //let icon = document.querySelector("#current-icon");
-    //let iconNow = response.data.condition.icon;
+    //let iconNow = response.data.condition.icon_url;
     // icon.innerHTML = iconNow;
 
     console.log(response);
