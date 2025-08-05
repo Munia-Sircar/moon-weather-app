@@ -50,9 +50,10 @@ a {
 
 .current-icon {
   position: relative;
-  top: 20px;
-  height: 85px;
-  width: 85;
+  top: 15px;
+  left: 12px;
+  height: 80px;
+  width: 80px;
 }
 
 #search-input {
