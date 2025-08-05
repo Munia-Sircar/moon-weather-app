@@ -48,6 +48,13 @@ function searchCity(event) {
   let hours = now.getHours();
   let minutes = now.getMinutes();
 
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
   let currentTime = document.querySelector("#current-time");
   currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 }
