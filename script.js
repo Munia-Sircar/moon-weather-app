@@ -21,11 +21,12 @@ function searchCity(event) {
     let descriptionNow = response.data.condition.description;
     description.innerHTML = descriptionNow;
 
-    //let icon = document.querySelector("#current-icon");
-    //let iconNow = response.data.condition.icon_url;
-    // icon.innerHTML = iconNow;
-
-    console.log(response);
+    let icon = document.querySelector("#icon");
+    let iconNow = response.data.condition.icon_url;
+    icon.innerHTML = `<img
+                src="${iconNow}"
+                alt=""
+                class="current-icon" />`;
   }
 
   let apiCity = document.querySelector("#search-input");
