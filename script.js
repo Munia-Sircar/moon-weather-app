@@ -5,5 +5,5 @@ function searchCity(event) {
   h1.innerHTML = city.value;
 }
 
-let enterCity = document.querySelector(".search-function");
+let enterCity = document.querySelector("#search-function");
 enterCity.addEventListener("submit", searchCity);
