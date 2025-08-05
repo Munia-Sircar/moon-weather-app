@@ -16,8 +16,6 @@ function searchCity(event) {
     let wind = document.querySelector("#windspeed");
     let windNow = Math.round(response.data.wind.speed);
     wind.innerHTML = windNow;
-
-    console.log(response);
   }
 
   let apiCity = document.querySelector("#search-input");
