@@ -56,6 +56,18 @@ a {
   width: 80px;
 }
 
+.forecast-day,
+.forecast-icon,
+.forecast-temp {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.forecast-high-temp {
+  margin-right: 10px;
+}
+
 #search-input {
   padding: 15px 80px 15px 10px;
   background-color: rgb(233, 245, 248);
