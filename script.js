@@ -73,20 +73,28 @@ function handleSearch(event) {
   currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 }
 
+function forecastDay(timestamp) {
+  let day = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day.getDay()];
+}
+
 function showForecast(response) {
+  let loop = response.data.daily;
   let forecastHtml = "";
 
-  response.data.daily.forEach(function (day, index) {
+  loop.forEach(function (day, index) {
     if (index < 5) {
       forecastHtml =
         forecastHtml +
         `
       <div>
-            <div class="forecast-day">Tue</div>
+            <div class="forecast-day">${forecastDay(day.time)}</div>
             <div class="forecast-icon"><img
     src="${day.condition.icon_url}"
     alt=""
-    class="current-icon" /></div>
+     /></div>
             <div class="forecast-temp">
               <span class="forecast-high-temp">${Math.round(
                 day.temperature.maximum
