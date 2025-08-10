@@ -89,5 +89,5 @@ function displayForecast() {
 let enterCity = document.querySelector("#search-function");
 enterCity.addEventListener("submit", handleSearch);
 
-searchCity("Dhaka");
+searchCity("Winnipeg");
 displayForecast();
