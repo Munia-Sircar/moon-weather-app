@@ -24,6 +24,8 @@ function displayCity(response) {
     src="${iconNow}"
     alt=""
     class="current-icon" />`;
+
+  getForecast(response.data.city);
 }
 
 function searchCity(city) {
@@ -31,6 +33,14 @@ function searchCity(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayCity);
+}
+
+function getForecast(city) {
+  let apiKey = "28d0bff0ffaa52b09e33da6etode543b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(showForecast);
+  console.log(apiUrl);
 }
 
 function handleSearch(event) {
@@ -64,7 +74,7 @@ function handleSearch(event) {
   currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function showForecast() {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -90,4 +100,4 @@ let enterCity = document.querySelector("#search-function");
 enterCity.addEventListener("submit", handleSearch);
 
 searchCity("Winnipeg");
-displayForecast();
+showForecast();
