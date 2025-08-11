@@ -113,4 +113,3 @@ let enterCity = document.querySelector("#search-function");
 enterCity.addEventListener("submit", handleSearch);
 
 searchCity("Dhaka");
-showForecast();
