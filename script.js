@@ -46,6 +46,7 @@ function handleSearch(event) {
   event.preventDefault();
   let apiCity = document.querySelector("#search-input");
 
+  console.log(apiCity.value);
   searchCity(apiCity.value);
 
   let now = new Date();
